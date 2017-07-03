@@ -1,0 +1,51 @@
+{
+  "events":[
+    {
+      "id":2,
+      "name":"Door_001",
+      "x":11.5,
+      "y":5.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/!object.png",
+            "spriteIndex":2,
+            "dir":0,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"PlaySound",
+              "spec":{
+                "sound":"sys/opengameart-rpg-sound-pack/inventory/cloth.ogg",
+                "volume":1.0,
+                "pitch":1.0
+              }
+            },
+            {
+              "jsonClass":"Teleport",
+              "loc":{
+                "map":"Map000005.rpgmap",
+                "x":15.5,
+                "y":5.5
+              },
+              "transitionId":1
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    }
+  ]
+}
