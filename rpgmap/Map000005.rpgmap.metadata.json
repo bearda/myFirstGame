@@ -1,6 +1,6 @@
 {
-  "parent":"",
-  "title":"Map000005",
+  "parent":"Map000006.rpgmap",
+  "title":"MyHouse",
   "xSize":34,
   "ySize":28,
   "tilesets":[
@@ -147,9 +147,9 @@
     "volume":1.0,
     "pitch":1.0
   },
-  "editorCenterX":16.59375,
-  "editorCenterY":10.125,
-  "lastGeneratedEventId":1,
+  "editorCenterX":17.40625,
+  "editorCenterY":13.03125,
+  "lastGeneratedEventId":9,
   "randomEncounterSettings":{
     "stepsAverage":20,
     "encounters":[
