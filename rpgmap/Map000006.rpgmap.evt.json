@@ -34,6 +34,50 @@
       ]
     },
     {
+      "id":10,
+      "name":"Learn to read",
+      "x":17.5,
+      "y":23.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"SetGlobalInt",
+              "key":"can_read",
+              "operatorId":0,
+              "value1":{
+                "jsonClass":"IntParameter",
+                "constant":1,
+                "valueTypeId":0,
+                "localVariable":"",
+                "globalVariable":""
+              }
+            },
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "Boom! you can read."
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
       "id":1,
       "name":"Door",
       "x":25.5,
@@ -100,6 +144,144 @@
       ]
     },
     {
+      "id":12,
+      "name":"Event00007",
+      "x":25.5,
+      "y":22.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"IfCondition",
+              "conditions":[
+                {
+                  "conditionTypeId":0,
+                  "intValue1":{
+                    "jsonClass":"IntParameter",
+                    "constant":0,
+                    "valueTypeId":2,
+                    "localVariable":"",
+                    "globalVariable":"can_read"
+                  },
+                  "intValue2":{
+                    "jsonClass":"IntParameter",
+                    "constant":0,
+                    "valueTypeId":0,
+                    "localVariable":"",
+                    "globalVariable":""
+                  },
+                  "operatorId":0,
+                  "negate":false
+                }
+              ],
+              "elseBranch":true,
+              "trueCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "\"This town is under the protection of the Knights Ascendant. All with Evil in their hearts, beware our mark!\""
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                }
+              ],
+              "elseCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "You can't read."
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":7,
+      "name":"Event00007",
+      "x":18.5,
+      "y":20.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"IfCondition",
+              "conditions":[
+                {
+                  "conditionTypeId":0,
+                  "intValue1":{
+                    "jsonClass":"IntParameter",
+                    "constant":0,
+                    "valueTypeId":2,
+                    "localVariable":"",
+                    "globalVariable":"can_read"
+                  },
+                  "intValue2":{
+                    "jsonClass":"IntParameter",
+                    "constant":0,
+                    "valueTypeId":0,
+                    "localVariable":"",
+                    "globalVariable":""
+                  },
+                  "operatorId":0,
+                  "negate":false
+                }
+              ],
+              "elseBranch":true,
+              "trueCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "\"Do you want to contribute to the new School, which will be built in the clearing to the East of the Square? Contact Eliza!\""
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                }
+              ],
+              "elseCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "You can't read. This looks like a short message... Something about the clearing?"
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
       "id":3,
       "name":"Door",
       "x":11.5,
@@ -123,6 +305,75 @@
                 "y":8.5
               },
               "transitionId":1
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":11,
+      "name":"Event00007",
+      "x":19.5,
+      "y":20.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"IfCondition",
+              "conditions":[
+                {
+                  "conditionTypeId":0,
+                  "intValue1":{
+                    "jsonClass":"IntParameter",
+                    "constant":0,
+                    "valueTypeId":2,
+                    "localVariable":"",
+                    "globalVariable":"can_read"
+                  },
+                  "intValue2":{
+                    "jsonClass":"IntParameter",
+                    "constant":0,
+                    "valueTypeId":0,
+                    "localVariable":"",
+                    "globalVariable":""
+                  },
+                  "operatorId":0,
+                  "negate":false
+                }
+              ],
+              "elseBranch":true,
+              "trueCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "\"Don't let your children out after sunset! Goblins are about!\""
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                }
+              ],
+              "elseCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "You can't read. This looks like a short message... Something about danger?"
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                }
+              ]
             }
           ]
         }
