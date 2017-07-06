@@ -1,8 +1,8 @@
 {
-  "parent":"",
-  "title":"Hometown",
-  "xSize":40,
-  "ySize":30,
+  "parent":"Map000006.rpgmap",
+  "title":"pub",
+  "xSize":20,
+  "ySize":20,
   "tilesets":[
     "sys/Refmap-TileA5.png",
     "sys/Refmap-TileB.png",
@@ -140,16 +140,16 @@
     "sys/Refmap-A4-5-6.png",
     "sys/Refmap-A4-5-7.png"
   ],
-  "interior":false,
+  "interior":true,
   "battleBackground":"sys/Etolier/01sougen.jpg",
   "battleMusic":{
     "sound":"sys/sean_m_stephens/Battle1.mid",
     "volume":1.0,
     "pitch":1.0
   },
-  "editorCenterX":16.59375,
-  "editorCenterY":20.4375,
-  "lastGeneratedEventId":12,
+  "editorCenterX":10.0,
+  "editorCenterY":9.546875,
+  "lastGeneratedEventId":1,
   "randomEncounterSettings":{
     "stepsAverage":20,
     "encounters":[
