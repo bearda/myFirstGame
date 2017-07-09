@@ -1,0 +1,363 @@
+{
+  "events":[
+    {
+      "id":1,
+      "name":"Mayor Bill",
+      "x":10.5,
+      "y":8.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/vx_chara03_f.png",
+            "spriteIndex":2,
+            "dir":0,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":2,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "How are you doing? Are you keeping up with your lessons?"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "It doesn't look like it. Say, how about you go over your letters again. They are on the black board."
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "Let me know when you can read the plaque in the town square!"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"GetChoice",
+              "question":[
+                "Do you want to try it right now?"
+              ],
+              "choices":[
+                "Yes",
+                "No"
+              ],
+              "allowCancel":false,
+              "innerCmds":[
+                [
+                  {
+                    "jsonClass":"GetStringInput",
+                    "message":"Who defends the town?",
+                    "storeInVariable":"translation",
+                    "maxLength":{
+                      "jsonClass":"IntParameter",
+                      "constant":20,
+                      "valueTypeId":0,
+                      "localVariable":"",
+                      "globalVariable":""
+                    },
+                    "initial":{
+                      "jsonClass":"StringParameter",
+                      "constant":"",
+                      "valueTypeId":0,
+                      "localVariable":"",
+                      "globalVariable":""
+                    }
+                  },
+                  {
+                    "jsonClass":"RunJs",
+                    "scriptBody":"if (game.getString('translation') == \"Knights Ascendant\") {\n\tgame.showText([\"You got it right!\"])\n\tgame.setEventState(event.mapName(), event.id(), 1)\n} else {\n\tgame.showText([\"You got it wrong!\"])\n}\n"
+                  }
+                ],
+                [
+                  {
+                    "jsonClass":"ShowText",
+                    "lines":[
+                      "Thats okay."
+                    ],
+                    "useCharacterFace":false,
+                    "characterId":0
+                  }
+                ],
+                [
+                  
+                ]
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            }
+          ]
+        },
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/vx_chara03_f.png",
+            "spriteIndex":2,
+            "dir":0,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":5,
+          "animationType":0,
+          "runOnceThenIncrementState":true,
+          "cmds":[
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "You did it! I am so proud of you!"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"PlayMusic",
+              "slot":{
+                "jsonClass":"IntParameter",
+                "constant":0,
+                "valueTypeId":0,
+                "localVariable":"",
+                "globalVariable":""
+              },
+              "spec":{
+                "sound":"sys/aaron_mcdonald/Macbeth - Cue 1.mid",
+                "volume":1.0,
+                "pitch":1.0
+              },
+              "loop":false,
+              "fadeDuration":0.3
+            },
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "You can read!"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"SetGlobalInt",
+              "key":"can_read",
+              "operatorId":0,
+              "value1":{
+                "jsonClass":"IntParameter",
+                "constant":1,
+                "valueTypeId":0,
+                "localVariable":"",
+                "globalVariable":""
+              }
+            },
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "Look around the town for things to read!"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            }
+          ]
+        },
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/vx_chara03_f.png",
+            "spriteIndex":2,
+            "dir":0,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "I love teaching. But this room really isn't suited to it... With the new building, I can teach children from all over the countryside!"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":2,
+      "name":"Letters",
+      "x":11.5,
+      "y":6.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "g -> a",
+                "v -> b",
+                "d -> c",
+                "y -> d",
+                "l -> e",
+                "n -> f",
+                "r -> g",
+                "p -> h",
+                "f -> i",
+                "m -> j",
+                "x -> k",
+                "o -> l",
+                "t -> m",
+                "z -> n",
+                "u -> o",
+                "e -> p",
+                "c -> q",
+                "i -> r",
+                "k -> s",
+                "s -> t",
+                "h -> u",
+                "w -> v",
+                "q -> w",
+                "a -> x",
+                "b -> y",
+                "j -> z"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":3,
+      "name":"Letters",
+      "x":12.5,
+      "y":6.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "g -> a",
+                "v -> b",
+                "d -> c",
+                "y -> d",
+                "l -> e",
+                "n -> f",
+                "r -> g",
+                "p -> h",
+                "f -> i",
+                "m -> j",
+                "x -> k",
+                "o -> l",
+                "t -> m",
+                "z -> n",
+                "u -> o",
+                "e -> p",
+                "c -> q",
+                "i -> r",
+                "k -> s",
+                "s -> t",
+                "h -> u",
+                "w -> v",
+                "q -> w",
+                "a -> x",
+                "b -> y",
+                "j -> z"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":5,
+      "name":"Event00005",
+      "x":12.5,
+      "y":12.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"PlaySound",
+              "spec":{
+                "sound":"sys/opengameart-rpg-sound-pack/inventory/cloth.ogg",
+                "volume":1.0,
+                "pitch":1.0
+              }
+            },
+            {
+              "jsonClass":"Teleport",
+              "loc":{
+                "map":"Map000006.rpgmap",
+                "x":19.5,
+                "y":17.5
+              },
+              "transitionId":1
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    }
+  ]
+}

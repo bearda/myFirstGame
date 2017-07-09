@@ -34,50 +34,6 @@
       ]
     },
     {
-      "id":10,
-      "name":"Learn to read",
-      "x":17.5,
-      "y":23.5,
-      "states":[
-        {
-          "conditions":[
-            
-          ],
-          "height":0,
-          "affixDirection":false,
-          "trigger":1,
-          "animationType":0,
-          "runOnceThenIncrementState":false,
-          "cmds":[
-            {
-              "jsonClass":"SetGlobalInt",
-              "key":"can_read",
-              "operatorId":0,
-              "value1":{
-                "jsonClass":"IntParameter",
-                "constant":1,
-                "valueTypeId":0,
-                "localVariable":"",
-                "globalVariable":""
-              }
-            },
-            {
-              "jsonClass":"ShowText",
-              "lines":[
-                "Boom! you can read."
-              ],
-              "useCharacterFace":false,
-              "characterId":0
-            }
-          ]
-        }
-      ],
-      "eventClassId":-1,
-      "params":[
-        
-      ]
-    },
-    {
       "id":1,
       "name":"Door",
       "x":25.5,
@@ -98,7 +54,7 @@
               "loc":{
                 "map":"Map000007.rpgmap",
                 "x":13.5,
-                "y":8.5
+                "y":10.5
               },
               "transitionId":1
             }
@@ -120,7 +76,7 @@
           "conditions":[
             
           ],
-          "height":0,
+          "height":1,
           "affixDirection":false,
           "trigger":1,
           "animationType":0,
@@ -129,9 +85,9 @@
             {
               "jsonClass":"Teleport",
               "loc":{
-                "map":"Map000007.rpgmap",
-                "x":13.5,
-                "y":8.5
+                "map":"Map000009.rpgmap",
+                "x":12.5,
+                "y":11.5
               },
               "transitionId":1
             }
@@ -197,7 +153,9 @@
                 {
                   "jsonClass":"ShowText",
                   "lines":[
-                    "You can't read."
+                    "You can't read. The letters look like this:",
+                    "",
+                    "\"spfk suqz fk hzyli spl eiusldsfuz un spl xzfrpsk gkdlzygzs. goo qfsp lwfo fz splfi plgisk, vlqgil uhi tgix!\""
                   ],
                   "useCharacterFace":false,
                   "characterId":0
@@ -300,9 +258,9 @@
             {
               "jsonClass":"Teleport",
               "loc":{
-                "map":"Map000007.rpgmap",
-                "x":13.5,
-                "y":8.5
+                "map":"Map000008.rpgmap",
+                "x":9.5,
+                "y":10.5
               },
               "transitionId":1
             }

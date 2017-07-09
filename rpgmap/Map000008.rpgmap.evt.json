@@ -100,6 +100,142 @@
       "params":[
         
       ]
+    },
+    {
+      "id":3,
+      "name":"Ritter",
+      "x":7.5,
+      "y":9.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "You know your father doesn't want you drinking the hard stuff just yet. But we do have a nice mead!"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"IfCondition",
+              "conditions":[
+                {
+                  "conditionTypeId":2,
+                  "intValue1":{
+                    "jsonClass":"IntParameter",
+                    "constant":32,
+                    "valueTypeId":0,
+                    "localVariable":"",
+                    "globalVariable":""
+                  },
+                  "intValue2":{
+                    "jsonClass":"IntParameter",
+                    "constant":1,
+                    "valueTypeId":0,
+                    "localVariable":"",
+                    "globalVariable":""
+                  },
+                  "operatorId":0,
+                  "negate":false
+                }
+              ],
+              "elseBranch":true,
+              "trueCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "Finish the one you have before getting another one!"
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                }
+              ],
+              "elseCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "Ritter gave you a mead!"
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                },
+                {
+                  "jsonClass":"AddRemoveItem",
+                  "add":true,
+                  "itemId":{
+                    "jsonClass":"IntParameter",
+                    "constant":32,
+                    "valueTypeId":0,
+                    "localVariable":"",
+                    "globalVariable":""
+                  },
+                  "quantity":{
+                    "jsonClass":"IntParameter",
+                    "constant":1,
+                    "valueTypeId":0,
+                    "localVariable":"",
+                    "globalVariable":""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":4,
+      "name":"door_to_outside",
+      "x":9.5,
+      "y":11.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"PlaySound",
+              "spec":{
+                "sound":"sys/opengameart-rpg-sound-pack/inventory/cloth.ogg",
+                "volume":1.0,
+                "pitch":1.0
+              }
+            },
+            {
+              "jsonClass":"Teleport",
+              "loc":{
+                "map":"Map000006.rpgmap",
+                "x":11.5,
+                "y":21.5
+              },
+              "transitionId":1
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
     }
   ]
 }

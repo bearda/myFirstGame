@@ -1,8 +1,8 @@
 {
   "parent":"Map000006.rpgmap",
-  "title":"pub",
-  "xSize":20,
-  "ySize":20,
+  "title":"Town Hall",
+  "xSize":40,
+  "ySize":30,
   "tilesets":[
     "sys/Refmap-TileA5.png",
     "sys/Refmap-TileB.png",
@@ -147,9 +147,9 @@
     "volume":1.0,
     "pitch":1.0
   },
-  "editorCenterX":10.0,
-  "editorCenterY":9.546875,
-  "lastGeneratedEventId":4,
+  "editorCenterX":16.59375,
+  "editorCenterY":9.65625,
+  "lastGeneratedEventId":5,
   "randomEncounterSettings":{
     "stepsAverage":20,
     "encounters":[

@@ -75,7 +75,7 @@
     ]
   },
   {
-    "name":"",
+    "name":"Door",
     "states":[
       {
         "conditions":[
@@ -87,7 +87,23 @@
         "animationType":0,
         "runOnceThenIncrementState":false,
         "cmds":[
-          
+          {
+            "jsonClass":"PlaySound",
+            "spec":{
+              "sound":"sys/opengameart-rpg-sound-pack/inventory/cloth.ogg",
+              "volume":1.0,
+              "pitch":1.0
+            }
+          },
+          {
+            "jsonClass":"Teleport",
+            "loc":{
+              "map":"Map000006.rpgmap",
+              "x":20.5,
+              "y":22.5
+            },
+            "transitionId":1
+          }
         ]
       }
     ]

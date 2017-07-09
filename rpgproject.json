@@ -2,12 +2,12 @@
   "uuid":"a34c423d-ef2d-44e0-ac02-b04e7d46f4b7",
   "title":"Untitled Project",
   "recentMapName":"",
-  "lastCreatedMapId":8,
+  "lastCreatedMapId":9,
   "startup":{
     "startingLoc":{
-      "map":"Map000008.rpgmap",
-      "x":9.5,
-      "y":10.5
+      "map":"Map000009.rpgmap",
+      "x":12.5,
+      "y":9.5
     },
     "startingParty":[
       0
