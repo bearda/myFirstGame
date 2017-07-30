@@ -34,6 +34,77 @@
       ]
     },
     {
+      "id":14,
+      "name":"start soldiers",
+      "x":15.5,
+      "y":29.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":2,
+          "animationType":0,
+          "runOnceThenIncrementState":true,
+          "cmds":[
+            {
+              "jsonClass":"SetEventSpeed",
+              "entitySpec":{
+                "whichEntityId":0,
+                "mapName":"Map000006.rpgmap",
+                "eventId":1
+              },
+              "speed":7.0
+            },
+            {
+              "jsonClass":"MoveEvent",
+              "entitySpec":{
+                "whichEntityId":0,
+                "mapName":"Map000006.rpgmap",
+                "eventId":1
+              },
+              "dx":0.0,
+              "dy":-6.0,
+              "affixDirection":true,
+              "async":false
+            },
+            {
+              "jsonClass":"SetEventSpeed",
+              "entitySpec":{
+                "whichEntityId":0,
+                "mapName":"Map000006.rpgmap",
+                "eventId":1
+              },
+              "speed":4.0
+            },
+            {
+              "jsonClass":"RunJs",
+              "scriptBody":"game.moveEvent(16, 0.0, 1.0, true, true);\ngame.moveEvent(17, 0.0, 1.0, true, true);\ngame.moveEvent(18, 0.0, 1.0, true, false);\ngame.setEventState(event.mapName(), 17, 1);\ngame.setEventState(event.mapName(), 16, 1);\ngame.setEventState(event.mapName(), 18, 1);"
+            }
+          ]
+        },
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
       "id":1,
       "name":"Door",
       "x":25.5,
@@ -57,6 +128,96 @@
                 "y":10.5
               },
               "transitionId":1
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":13,
+      "name":"Town Crier",
+      "x":19.5,
+      "y":23.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/vx_chara03_a.png",
+            "spriteIndex":5,
+            "dir":0,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"GetChoice",
+              "question":[
+                "Do you want to hear any news?"
+              ],
+              "choices":[
+                "Tell me about the clearing to the East",
+                "How are things going in town?",
+                "What does this town do?",
+                "No"
+              ],
+              "allowCancel":false,
+              "innerCmds":[
+                [
+                  {
+                    "jsonClass":"ShowText",
+                    "lines":[
+                      "Oh that? We want to build a school! we will hold lessons for children from miles around."
+                    ],
+                    "useCharacterFace":false,
+                    "characterId":0
+                  }
+                ],
+                [
+                  {
+                    "jsonClass":"ShowText",
+                    "lines":[
+                      "There are goblins about. But word on the road is that the army will be through any week now."
+                    ],
+                    "useCharacterFace":false,
+                    "characterId":0
+                  }
+                ],
+                [
+                  {
+                    "jsonClass":"ShowText",
+                    "lines":[
+                      "Mostly we trade lumber, although their used to be a quarry. The stone was too low quality to make money on though."
+                    ],
+                    "useCharacterFace":false,
+                    "characterId":0
+                  }
+                ],
+                [
+                  {
+                    "jsonClass":"ShowText",
+                    "lines":[
+                      "Let me know if you do!"
+                    ],
+                    "useCharacterFace":false,
+                    "characterId":0
+                  }
+                ],
+                [
+                  
+                ]
+              ],
+              "useCharacterFace":false,
+              "characterId":0
             }
           ]
         }
@@ -91,6 +252,50 @@
               },
               "transitionId":1
             }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":17,
+      "name":"Soldier",
+      "x":16.5,
+      "y":28.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            
+          ]
+        },
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/vx_chara04_a.png",
+            "spriteIndex":5,
+            "dir":3,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            
           ]
         }
       ],
@@ -264,6 +469,94 @@
               },
               "transitionId":1
             }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":18,
+      "name":"Soldier",
+      "x":17.5,
+      "y":28.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            
+          ]
+        },
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/vx_chara04_a.png",
+            "spriteIndex":5,
+            "dir":3,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":16,
+      "name":"Soldier",
+      "x":15.5,
+      "y":28.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            
+          ]
+        },
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/vx_chara04_a.png",
+            "spriteIndex":5,
+            "dir":3,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            
           ]
         }
       ],
