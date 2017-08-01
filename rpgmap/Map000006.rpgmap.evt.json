@@ -66,9 +66,21 @@
                 "eventId":1
               },
               "dx":0.0,
-              "dy":-6.0,
+              "dy":-3.0,
               "affixDirection":true,
               "async":false
+            },
+            {
+              "jsonClass":"MoveEvent",
+              "entitySpec":{
+                "whichEntityId":0,
+                "mapName":"Map000006.rpgmap",
+                "eventId":1
+              },
+              "dx":0.0,
+              "dy":-3.0,
+              "affixDirection":true,
+              "async":true
             },
             {
               "jsonClass":"SetEventSpeed",
@@ -82,6 +94,42 @@
             {
               "jsonClass":"RunJs",
               "scriptBody":"game.moveEvent(16, 0.0, 1.0, true, true);\ngame.moveEvent(17, 0.0, 1.0, true, true);\ngame.moveEvent(18, 0.0, 1.0, true, false);\ngame.setEventState(event.mapName(), 17, 1);\ngame.setEventState(event.mapName(), 16, 1);\ngame.setEventState(event.mapName(), 18, 1);"
+            },
+            {
+              "jsonClass":"MoveEvent",
+              "entitySpec":{
+                "whichEntityId":2,
+                "mapName":"Map000006.rpgmap",
+                "eventId":16
+              },
+              "dx":0.0,
+              "dy":-5.0,
+              "affixDirection":false,
+              "async":true
+            },
+            {
+              "jsonClass":"MoveEvent",
+              "entitySpec":{
+                "whichEntityId":2,
+                "mapName":"Map000006.rpgmap",
+                "eventId":17
+              },
+              "dx":0.0,
+              "dy":-5.0,
+              "affixDirection":false,
+              "async":true
+            },
+            {
+              "jsonClass":"MoveEvent",
+              "entitySpec":{
+                "whichEntityId":2,
+                "mapName":"Map000006.rpgmap",
+                "eventId":18
+              },
+              "dx":0.0,
+              "dy":-5.0,
+              "affixDirection":false,
+              "async":true
             }
           ]
         },
@@ -291,11 +339,22 @@
           },
           "height":1,
           "affixDirection":false,
-          "trigger":1,
+          "trigger":2,
           "animationType":0,
           "runOnceThenIncrementState":false,
           "cmds":[
-            
+            {
+              "jsonClass":"MoveEvent",
+              "entitySpec":{
+                "whichEntityId":0,
+                "mapName":"Map000006.rpgmap",
+                "eventId":1
+              },
+              "dx":0.0,
+              "dy":-1.0,
+              "affixDirection":true,
+              "async":true
+            }
           ]
         }
       ],
@@ -508,11 +567,22 @@
           },
           "height":1,
           "affixDirection":false,
-          "trigger":1,
+          "trigger":2,
           "animationType":0,
           "runOnceThenIncrementState":false,
           "cmds":[
-            
+            {
+              "jsonClass":"MoveEvent",
+              "entitySpec":{
+                "whichEntityId":0,
+                "mapName":"Map000006.rpgmap",
+                "eventId":1
+              },
+              "dx":0.0,
+              "dy":-1.0,
+              "affixDirection":true,
+              "async":true
+            }
           ]
         }
       ],
@@ -552,11 +622,22 @@
           },
           "height":1,
           "affixDirection":false,
-          "trigger":1,
+          "trigger":2,
           "animationType":0,
           "runOnceThenIncrementState":false,
           "cmds":[
-            
+            {
+              "jsonClass":"MoveEvent",
+              "entitySpec":{
+                "whichEntityId":0,
+                "mapName":"Map000006.rpgmap",
+                "eventId":1
+              },
+              "dx":0.0,
+              "dy":-1.0,
+              "affixDirection":true,
+              "async":true
+            }
           ]
         }
       ],
