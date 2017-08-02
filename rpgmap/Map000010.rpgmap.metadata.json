@@ -1,6 +1,6 @@
 {
   "parent":"Map000006.rpgmap",
-  "title":"Town Hall",
+  "title":"Fields",
   "xSize":40,
   "ySize":30,
   "tilesets":[
@@ -140,16 +140,16 @@
     "sys/Refmap-A4-5-6.png",
     "sys/Refmap-A4-5-7.png"
   ],
-  "interior":true,
+  "interior":false,
   "battleBackground":"sys/Etolier/01sougen.jpg",
   "battleMusic":{
     "sound":"sys/sean_m_stephens/Battle1.mid",
     "volume":1.0,
     "pitch":1.0
   },
-  "editorCenterX":16.59375,
-  "editorCenterY":9.578125,
-  "lastGeneratedEventId":5,
+  "editorCenterX":20.0,
+  "editorCenterY":15.0,
+  "lastGeneratedEventId":1,
   "randomEncounterSettings":{
     "stepsAverage":20,
     "encounters":[

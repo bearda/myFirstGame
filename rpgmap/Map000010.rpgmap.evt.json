@@ -1,0 +1,75 @@
+{
+  "events":[
+    {
+      "id":1,
+      "name":"Sign",
+      "x":5.5,
+      "y":9.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"IfCondition",
+              "conditions":[
+                {
+                  "conditionTypeId":0,
+                  "intValue1":{
+                    "jsonClass":"IntParameter",
+                    "constant":0,
+                    "valueTypeId":2,
+                    "localVariable":"",
+                    "globalVariable":"can_read"
+                  },
+                  "intValue2":{
+                    "jsonClass":"IntParameter",
+                    "constant":0,
+                    "valueTypeId":0,
+                    "localVariable":"",
+                    "globalVariable":""
+                  },
+                  "operatorId":0,
+                  "negate":false
+                }
+              ],
+              "elseBranch":true,
+              "trueCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "Welcome to lesser Vale!",
+                    "Founded 362",
+                    "Population: 12"
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                }
+              ],
+              "elseCmds":[
+                {
+                  "jsonClass":"ShowText",
+                  "lines":[
+                    "You can't read. But you know that this is the sign that welcomes people to the village."
+                  ],
+                  "useCharacterFace":false,
+                  "characterId":0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    }
+  ]
+}
