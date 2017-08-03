@@ -1,0 +1,37 @@
+{
+  "events":[
+    {
+      "id":1,
+      "name":"door to cabin",
+      "x":14.5,
+      "y":14.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":2,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"Teleport",
+              "loc":{
+                "map":"Map000012.rpgmap",
+                "x":8.5,
+                "y":9.5
+              },
+              "transitionId":1
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    }
+  ]
+}
